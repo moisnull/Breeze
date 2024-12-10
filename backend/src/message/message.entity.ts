@@ -1,22 +1,22 @@
-import { Entity, Column, PrimaryGeneratedColumn } from "typeorm";
+import { Entity, Column, PrimaryGeneratedColumn } from 'typeorm';
 
 @Entity()
 export class Message {
-    @PrimaryGeneratedColumn()
-    id: string;
+  @PrimaryGeneratedColumn()
+  id: string;
 
-    @Column()
-    content: string;
+  @Column()
+  content: string;
 
-    @Column()
-    attachment: string;
+  @Column()
+  attachment: string;
 
-    @Column()
-    userId: string;
+  @Column()
+  userId: string;
 
-    @Column()
-    roomId: string;
+  @Column()
+  roomId: string;
 
-    @Column()
-    createdAt: Date;
+  @Column()
+  createdAt: Date;
 }
